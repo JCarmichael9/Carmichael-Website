@@ -5,8 +5,16 @@
   onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
   function setMenu(o) { menu.classList.toggle('open', o); btn.setAttribute('aria-expanded', o); }
   btn.addEventListener('click', function () { setMenu(btn.getAttribute('aria-expanded') !== 'true'); });
-  menu.addEventListener('click', function (e) { if (e.target.tagName === 'A') setMenu(false); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { setMenu(false); } });
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') {
+      setMenu(false);
+      btn.focus();
+    }
+  });
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 900) setMenu(false);
+  }, { passive: true });
   document.getElementById('yr').textContent = new Date().getFullYear();
 
   var els = document.querySelectorAll('.reveal');
@@ -16,9 +24,37 @@
   } else els.forEach(function (el) { el.classList.add('in'); });
 
   var copy = document.getElementById('copy'), status = document.getElementById('copy-status');
+  var email = 'carmichaelwebstudios@gmail.com';
+  function fallbackCopy(value) {
+    var field = document.createElement('textarea');
+    field.value = value;
+    field.setAttribute('readonly', '');
+    field.style.position = 'fixed';
+    field.style.opacity = '0';
+    document.body.appendChild(field);
+    field.select();
+    var copied;
+    try { copied = document.execCommand('copy'); }
+    finally { field.remove(); }
+    if (!copied) throw new Error('Clipboard copy is unavailable.');
+  }
+  async function copyEmailAddress(value) {
+    if (navigator.clipboard && window.isSecureContext) {
+      try {
+        await navigator.clipboard.writeText(value);
+        return;
+      } catch (error) {
+        fallbackCopy(value);
+        return;
+      }
+    }
+    fallbackCopy(value);
+  }
   copy.addEventListener('click', function () {
-    var email = document.getElementById('mail').href.replace('mailto:', '').split('?')[0];
-    if (navigator.clipboard) navigator.clipboard.writeText(email).then(function () { status.textContent = 'Email address copied.'; }, function () { status.textContent = 'Copy failed. Email: ' + email; });
-    else status.textContent = 'Email: ' + email;
+    copyEmailAddress(email).then(function () {
+      status.textContent = 'Email address copied.';
+    }).catch(function () {
+      status.textContent = 'Unable to copy. You can copy this address manually: ' + email;
+    });
   });
 })();
