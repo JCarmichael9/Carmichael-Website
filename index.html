@@ -4,118 +4,153 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Carmichael Web Studio | Thoughtful design. Websites that work.</title>
-<meta name="description" content="Carmichael Web Studio builds modern, responsive, affordable websites for small local businesses such as barbershops, salons, auto detailers and cleaning companies.">
+<meta name="description" content="Custom-designed, responsive websites for barbershops, photographers, detailers and other small businesses. Simple websites from $350, with flexible pricing.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Carmichael Web Studio">
 <meta property="og:description" content="Thoughtful design. Websites that work.">
-<!-- Add og:image with an absolute URL after deploying (see README). -->
 <meta name="theme-color" content="#0B1020">
 <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="nav">
+<header class="nav" id="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="#top" aria-label="Carmichael Web Studio, home">
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 0l2.2 9.8L20 12l-5.8 2.2L12 24l-2.2-9.8L4 12l5.8-2.2z"/></svg>
-      <span>Carmichael Web Studio</span>
-    </a>
+    <a class="brand" href="#top" aria-label="Carmichael Web Studio, home"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 0l2.2 9.8L20 12l-5.8 2.2L12 24l-2.2-9.8L4 12l5.8-2.2z"/></svg><span>Carmichael Web Studio</span></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
-    <nav id="menu" aria-label="Main">
-      <a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#about">About</a><a class="btn small" href="#contact">Contact</a>
-    </nav>
+    <nav id="menu" aria-label="Main"><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#about">About</a><a class="btn small" href="#contact">Discuss a Project</a></nav>
   </div>
 </header>
 
 <main id="main">
 <section class="hero wrap" id="top">
   <div class="hero-copy">
-    <h1>Thoughtful design. Websites that work.</h1>
-    <p>Modern, responsive websites for small businesses that want a stronger online presence.</p>
-    <div class="cta">
-      <a class="btn" href="#contact">Discuss a Project</a>
-      <a class="btn ghost" href="#work">View My Work</a>
-    </div>
+    <h1>Your business deserves more than a basic website.</h1>
+    <p>Custom-designed websites that help small businesses look professional, show off their work, and make it easy for customers to get in touch.</p>
+    <div class="cta"><a class="btn" href="#contact">Discuss a Project</a><a class="btn ghost" href="#work">View My Work</a></div>
+    <p class="price-ref">Simple websites typically $350–$500. Pricing is flexible.</p>
   </div>
-  <div class="mock" aria-hidden="true">
+  <div class="stage" aria-hidden="true">
     <div class="browser">
-      <div class="bar"><i></i><i></i><i></i></div>
-      <div class="screen s1"><b></b><u></u><u class="short"></u><span></span></div>
+      <div class="bar"><i></i><i></i><i></i><span>jcarmichael9.github.io/FlicksByNick</span></div>
+      <div class="shot wide"><img src="assets/img/flicks-home.webp" alt="" width="1400" height="729"></div>
     </div>
-    <div class="phone"><div class="screen s2"><b></b><u></u><span></span></div></div>
+    <div class="phone"><img src="assets/img/phantom-menu.webp" alt="" width="1056" height="942"></div>
   </div>
 </section>
 
 <section class="sec wrap" id="work">
   <h2>Selected work</h2>
-  <p class="lead">Two concept projects I designed to show what a small-business site can look like. They are portfolio concepts, not client work.</p>
-  <div class="grid2">
-    <article class="card">
-      <div class="ph" role="img" aria-label="Placeholder preview of the barbershop concept website">Placeholder: barbershop preview</div>
-      <h3>Alder Street Barbers</h3>
-      <p class="tag">Concept project</p>
-      <p><strong>Design goal:</strong> a confident, easy-to-scan site where visitors find prices, hours and a booking button within seconds.</p>
-      <a class="btn" href="demos/barbershop/">View live demo</a>
-    </article>
-    <article class="card">
-      <div class="ph alt" role="img" aria-label="Placeholder preview of the auto-detailing concept website">Placeholder: detailing preview</div>
-      <h3>Gloss Harbor Detailing</h3>
-      <p class="tag">Concept project</p>
-      <p><strong>Design goal:</strong> a premium, high-contrast look that makes service packages clear and leads to a quote request.</p>
-      <a class="btn" href="demos/detailing/">View live demo</a>
-    </article>
-  </div>
+  <article class="proj reveal">
+    <div class="proj-vis">
+      <div class="browser"><div class="bar"><i></i><i></i><i></i><span>Flicks by Nick</span></div><div class="shot wide"><img src="assets/img/flicks-home.webp" alt="Flicks by Nick homepage: a football player in action beneath the headline Action Sports Photography" width="1400" height="729" loading="lazy"></div></div>
+      <img class="inset" src="assets/img/flicks-galleries.webp" alt="Flicks by Nick galleries page: a grid of basketball, wrestling and football photos labeled by sport" width="220" height="114" loading="lazy">
+    </div>
+    <div class="proj-txt">
+      <p class="tag">Client website</p>
+      <h3>Flicks by Nick</h3>
+      <p>A photographer's website built to showcase sports photography and make it easier for prospective clients to get in touch.</p>
+      <ul><li>Full-screen hero led by a single action photo</li><li>Featured work grid and galleries filtered by sport</li><li>Full-size photo viewer</li><li>About page and a contact page with an inquiry form</li></ul>
+      <a class="btn" href="https://jcarmichael9.github.io/FlicksByNick/" target="_blank" rel="noopener">View Live Site<span class="sr"> (opens in a new tab)</span></a>
+    </div>
+  </article>
+  <article class="proj flip reveal">
+    <div class="proj-vis">
+      <div class="browser"><div class="bar"><i></i><i></i><i></i><span>jcarmichael9.github.io/phantom-portfolio</span></div><div class="shot sq"><img src="assets/img/phantom-menu.webp" alt="Phantom Portfolio main menu: Play, Gallery, Stats, About and Exit Reality" width="1056" height="942" loading="lazy"></div></div>
+      <img class="inset" src="assets/img/phantom-about.webp" alt="Phantom Portfolio About Me page with a profile card and skill bars" width="220" height="115" loading="lazy">
+    </div>
+    <div class="proj-txt">
+      <p class="tag">Personal project</p>
+      <h3>Phantom Portfolio</h3>
+      <p>My senior-year portfolio, built to highlight my work throughout high school. I was both the designer and the client.</p>
+      <ul><li>Intro sequence with a skip option</li><li>Game-style main menu: Play, Gallery, Stats, About and Exit</li><li>A year-by-year timeline from sophomore to senior year</li><li>A character-profile About page with skill levels</li></ul>
+      <a class="btn" href="https://jcarmichael9.github.io/phantom-portfolio/" target="_blank" rel="noopener">View Live Site<span class="sr"> (opens in a new tab)</span></a>
+    </div>
+  </article>
 </section>
 
 <section class="sec wrap" id="services">
-  <h2>Services and pricing</h2>
-  <p class="lead">Two starting packages. Final prices depend on the agreed scope.</p>
-  <div class="grid2">
-    <article class="card">
-      <h3>Starter Website</h3>
-      <p class="price">$150 <small>introductory price</small></p>
-      <p>For suitable, simple projects.</p>
-      <ul><li>One-page responsive website</li><li>Business information</li><li>Services section</li><li>Contact links</li><li>Basic on-page SEO setup</li><li>One agreed round of revisions</li><li>Assistance with publishing</li></ul>
+  <div class="split"><h2>Services and pricing</h2><p>Two starting points. Prices are negotiable, and each project is scoped and priced with you before any work begins.</p></div>
+  <div class="plans">
+    <article class="plan reveal">
+      <h3>Starter Website</h3><p class="price">$350–$500 <small>negotiable</small></p>
+      <p class="for">For businesses that need a professional, straightforward online presence: one page that explains who you are, shows what you do and makes contacting you easy.</p>
+      <ul><li>One-page responsive website</li><li>Custom visual styling suited to your business</li><li>Business information and services</li><li>Clickable phone, email and contact links</li><li>Gallery section where appropriate</li><li>Basic on-page SEO setup</li><li>One agreed round of revisions</li><li>Assistance publishing the site</li></ul>
     </article>
-    <article class="card">
-      <h3>Business Website</h3>
-      <p class="price">$250–$350 <small>indicative range</small></p>
-      <p>For projects that need more.</p>
-      <ul><li>Multiple sections or pages</li><li>Expanded services information</li><li>Gallery</li><li>FAQs</li><li>Contact or booking links</li><li>Basic on-page SEO setup</li><li>An agreed number of revisions</li></ul>
+    <article class="plan feat reveal">
+      <h3>Business Website</h3><p class="price">$750–$1,000 <small>negotiable</small></p>
+      <p class="for">For businesses that need more detail: several services to explain, work to show off, or questions customers ask again and again.</p>
+      <ul><li>Multiple sections or pages, depending on scope</li><li>Expanded service descriptions</li><li>Gallery or portfolio presentation</li><li>FAQs where useful</li><li>Contact and booking links</li><li>Basic on-page SEO setup</li><li>An agreed number of revisions</li><li>Assistance publishing the site</li></ul>
     </article>
   </div>
-  <p class="note">Domain registration, third-party subscriptions, hosting beyond any included free option, custom integrations, copywriting beyond the agreed scope and ongoing maintenance are discussed separately.</p>
+  <p class="note">These are indicative ranges, and the final price depends on the agreed scope and your budget. As I build my client list, I'm open to reduced introductory pricing for the right project, from $100. Domain registration is optional and we'll discuss it when you inquire about your website. Third-party subscriptions, paid hosting, custom integrations, extensive copywriting and ongoing maintenance are also discussed separately.</p>
+  <a class="btn" href="#contact">Discuss a Project</a>
+</section>
+
+<section class="sec wrap why" id="why">
+  <h2>Why work with Carmichael Web Studio</h2>
+  <dl>
+    <div class="reveal"><dt>You talk to the person building it</dt><dd>No account managers or hand-offs. Questions and feedback go straight to me.</dd></div>
+    <div class="reveal"><dt>Designed for your business</dt><dd>Your site is styled around what you do and who you serve, not dropped into a template.</dd></div>
+    <div class="reveal"><dt>Works on every screen</dt><dd>Layouts are built and checked for phones, tablets and desktops.</dd></div>
+    <div class="reveal"><dt>Easy to contact you</dt><dd>Tap-to-call, email and booking links are placed where customers look for them.</dd></div>
+    <div class="reveal"><dt>Clear scope and price first</dt><dd>You know what is included and what it costs before work begins.</dd></div>
+    <div class="reveal"><dt>Tested before launch</dt><dd>Layout, links and contact options are checked before the site goes live.</dd></div>
+  </dl>
 </section>
 
 <section class="sec wrap" id="process">
   <h2>How a project works</h2>
   <ol class="steps">
-    <li><h3>Discuss</h3><p>Understand the business and its needs.</p></li>
-    <li><h3>Design</h3><p>Create a suitable website concept.</p></li>
-    <li><h3>Refine</h3><p>Review the work and complete the agreed revisions.</p></li>
-    <li><h3>Launch</h3><p>Test the website and help publish it.</p></li>
+    <li class="reveal"><span>01</span><h3>Discover</h3><p>We discuss your business, customers, goals, existing branding and what the website needs to do.</p></li>
+    <li class="reveal"><span>02</span><h3>Design</h3><p>I set the visual direction, page structure, content hierarchy and key calls to action.</p></li>
+    <li class="reveal"><span>03</span><h3>Refine</h3><p>You review the working site and I complete the revisions included in the agreed scope.</p></li>
+    <li class="reveal"><span>04</span><h3>Launch</h3><p>I test the layout, links and contact options on different screens, then help you publish.</p></li>
   </ol>
+  <p class="note">Timelines depend on the project and on how quickly content and feedback come back.</p>
 </section>
 
-<section class="sec wrap narrow" id="about">
-  <h2>About</h2>
-  <p>I'm a student developer with experience in HTML, CSS, Java, and AI-assisted website development. My approach combines an understanding of web fundamentals with modern tools to build clean, practical websites.</p>
-  <p>I'm building Carmichael Web Studio around thoughtful design, clear communication, and work that meets each client's needs.</p>
-</section>
-
-<section class="sec wrap narrow contact" id="contact">
-  <h2>Let's talk about your website</h2>
-  <p>Send a short email with your business name, what you offer, and what you'd like the site to do. I'll reply to discuss scope and next steps.</p>
-  <div class="cta">
-    <a class="btn" id="mail" href="mailto:carmichaelwebstudios@gmail.com?subject=Website%20project%20inquiry">Email carmichaelwebstudios@gmail.com</a>
-    <button class="btn ghost" id="copy" type="button">Copy email address</button>
+<section class="sec wrap about" id="about">
+  <div class="about-big reveal"><h2>Hi, I'm a student developer who takes all websites seriously.</h2></div>
+  <div class="about-txt reveal">
+    <p>I have experience with HTML, CSS, Java and AI-assisted development, and I understand the fundamentals behind the tools I use. That lets me build clean, practical sites instead of relying on a template.</p>
+    <p>Carmichael Web Studio is new, and I'd rather show you real work than inflate it. The projects above are what I've built so far.</p>
+    <ul class="princ"><li>Practical design over decoration</li><li>Clear communication from first message to launch</li><li>Work that fits what each client needs</li></ul>
   </div>
-  <p class="note" id="copy-status" role="status"></p>
+</section>
+
+<section class="sec wrap faq" id="faq">
+  <h2>Questions</h2>
+  <div class="faq-list">
+    <details><summary>How much does a website cost?</summary><p>Smaller websites are typically $350–$500 and larger ones $750–$1,000. These ranges are negotiable, and I'm open to reduced introductory pricing for early clients, from $100. We'll agree a price based on your scope before work begins. Domains, paid hosting and other third-party costs are separate.</p></details>
+    <details><summary>How long does a website take to build?</summary><p>It depends on the project and on how quickly you provide content and feedback. We'll agree on a realistic timeline when we discuss scope.</p></details>
+    <details><summary>What do I need to provide?</summary><p>Your business details, services, contact information, and any logo, photos or text you want used. If you're missing something, we can talk through options.</p></details>
+    <details><summary>Can you redesign an existing website?</summary><p>Yes, if it suits the scope. Send the link and I'll tell you what I'd change and whether it fits one of the packages.</p></details>
+    <details><summary>Will my website work on mobile devices?</summary><p>Yes. Every site is built to be responsive and checked on phone, tablet and desktop sizes.</p></details>
+    <details><summary>Do I need to buy a domain?</summary><p>A custom domain is optional and bought separately. We'll discuss that step when you inquire about your website, and I can help you publish on a free option first.</p></details>
+    <details><summary>Can you update my website after launch?</summary><p>Ongoing updates and maintenance aren't included in the packages. If you'd like them, we can discuss that separately.</p></details>
+    <details><summary>How do I get started?</summary><p>Send me an email using the button below. The first step is just a conversation about your business.</p></details>
+  </div>
+</section>
+
+<section class="finale" id="contact">
+  <div class="wrap fin-in">
+    <div>
+      <h2>Let's build something your business is proud to share.</h2>
+      <p>The first step is simply talking about your business and what you need. Send a short email and I'll reply to discuss next steps.</p>
+      <div class="cta"><a class="btn" id="mail" href="mailto:carmichaelwebstudios@gmail.com?subject=Website%20project%20inquiry">Email carmichaelwebstudios@gmail.com</a><button class="btn ghost" id="copy" type="button">Copy email address</button></div>
+      <p class="note" id="copy-status" role="status"></p>
+    </div>
+    <div class="incl"><h3>Helpful to include</h3><ul><li>Your business name and what you offer</li><li>Your current website, if you have one</li><li>What you want the site to do</li><li>Sites you like</li><li>When you'd like to launch</li><li>Whether you'd like a custom domain</li></ul></div>
+  </div>
 </section>
 </main>
 
-<footer class="wrap foot"><span>© <span id="yr">2026</span> Carmichael Web Studio</span><span>Thoughtful design. Websites that work.</span></footer>
+<footer class="foot"><div class="wrap foot-in">
+  <div><a class="brand" href="#top"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 0l2.2 9.8L20 12l-5.8 2.2L12 24l-2.2-9.8L4 12l5.8-2.2z"/></svg><span>Carmichael Web Studio</span></a><p>Thoughtful design. Websites that work.</p></div>
+  <nav aria-label="Footer"><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#about">About</a><a href="#faq">Questions</a></nav>
+  <div><a href="mailto:carmichaelwebstudios@gmail.com">carmichaelwebstudios@gmail.com</a><p>© <span id="yr">2026</span> Carmichael Web Studio</p><a href="#top">Back to top</a></div>
+</div></footer>
 <script src="script.js"></script>
 </body>
 </html>
